@@ -10,6 +10,11 @@
     <!-- DataTables CSS -->
     <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 </head>
+<style>
+    .clickable-row {
+    cursor: pointer;
+}
+</style>
 <body>
 
 <div class="container mt-4">
