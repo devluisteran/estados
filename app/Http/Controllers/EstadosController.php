@@ -33,6 +33,8 @@ class EstadosController extends Controller
                     "name"=>$estado
                 ]);
             }
+
+             $estados = Estado::all();
         }
 
         return $estados;
