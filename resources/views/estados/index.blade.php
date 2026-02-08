@@ -1,22 +1,5 @@
 @extends("layauts.app")
 
-<?php 
-    $estados = [
-        ['id' => 1, 'nombre' => 'Guerrero'],
-        ['id' => 2, 'nombre' => 'Morelos'],
-        ['id' => 3, 'nombre' => 'Monterrey'],
-        ['id' => 4, 'nombre' => 'Monterrey'],
-        ['id' => 5, 'nombre' => 'Jalisco'],
-        ['id' => 6, 'nombre' => 'Nuevo León'],
-        ['id' => 7, 'nombre' => 'Guerrero'],
-        ['id' => 8, 'nombre' => 'Morelos'],
-        ['id' => 9, 'nombre' => 'Monterrey'],
-        ['id' => 10, 'nombre' => 'Monterrey'],
-        ['id' => 11, 'nombre' => 'Jalisco'],
-        ['id' => 12, 'nombre' => 'Nuevo León'],
-
-    ];
- ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,10 +23,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                   @foreach($estados as $estado)
+                   @foreach($estados as $key => $estado)
                     <tr class="text-center ">
-                        <th scope="row" id="{{$estado['id']}}" >{{ $estado['id'] }}</th>
-                        <td class="clickable-row">{{ $estado['nombre'] }}</td>
+                        <th scope="row" id="{{$estado['id']}}" >{{ $key + 1 }}</th>
+                        <td class="clickable-row">{{ $estado['name'] }}</td>
                     </tr>
                    @endforeach
                     
