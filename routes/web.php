@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [EstadosController::class,"index"]);
+Route::get('/estados/{id}', [EstadosController::class,"getMunicipios"]);
