@@ -50,15 +50,17 @@ aplicando buenas prácticas como **idempotencia** y **caching** para optimizar e
 ```bash
 git clone https://github.com/devluisteran/estados.git
 cd estados
-
+```
 ### 2️⃣ Instalar dependencias
 composer install
 
 ### 3️⃣ Configurar el entorno
 
 Copiar el archivo .env.example y crear el .env:
-
+```bash
 cp .env.example .env
+```
+
 
 Configurar la conexión a la base de datos en .env los siguientes datos vienen por default:
 
